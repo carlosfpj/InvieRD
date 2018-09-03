@@ -263,7 +263,22 @@ REPITE EN OTRAS ETIQUETAS HTML*/
       width: auto;
       max-width: 800px;
     }*/
+  /*PORTADA*/
   .titulo {
     font-size: 45px;
+    margin-top: 30px;
+  }
+
+  .title-a {
+    font-size: 18px;
+  }
+
+  .portada {
+    height: auto;
+  }
+
+  .portada .button {
+    display: inline-block;
+    margin-bottom: 30px;
   }
 }
