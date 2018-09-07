@@ -317,7 +317,35 @@ REPITE EN OTRAS ETIQUETAS HTML*/
 }
 
 @media screen and (max-width: 650px) {
+  .header {
+    text-align: center;
+  }
+
   .menu {
+    display: block;
     position: static;
+  }
+
+  .menu li:first-child {
+    margin: 0;
+  }
+
+  .menu ul {
+    padding: 0;
+  }
+
+  .logotipo {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 650px) {
+    .menu li {
+      display: block;
+      margin: 0;
+    }
+
+    .menu li:before {
+      display: none;
+    }
   }
 }
