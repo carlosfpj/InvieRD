@@ -281,4 +281,43 @@ REPITE EN OTRAS ETIQUETAS HTML*/
     display: inline-block;
     margin-bottom: 30px;
   }
+
+  /* GUITARRAS */
+  .contenedor-guitarra-a {
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  .contenedor-guitarra-b {
+    position: static;
+    margin-left: 0;
+  }
+
+  .guitarras {
+    text-align: center;
+  }
+
+  .guitarra.b {
+    height: auto;
+  }
+
+  .derecha, .izquierda {
+    float: none;
+    position: static;
+  }
+
+  .title-b {
+    margin: 0;
+  }
+
+  .guitarra li {
+    list-style: none;
+  }
+  /* GUITARRAS */
+}
+
+@media screen and (max-width: 650px) {
+  .menu {
+    position: static;
+  }
 }
