@@ -318,8 +318,45 @@ REPITE EN OTRAS ETIQUETAS HTML*/
 
 
 @media screen and (max-width: 767px) {
-  .footer {
-    border: 1px solid red;
+  /* selector de atributo*/
+  input[type="text"], input[type="email"] {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    zoom: 1.5;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .contacto {
+    margin: 0 auto;
+  }
+
+  .contacto img {
+    margin-bottom: 20px;
+  }
+
+  .col1 {
+    margin-right: 0;
+  }
+
+  .footer .contenedor {
+    display: block;
+  }
+
+  .footer .formulario {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .intereses label {
+    display: block;
+    font-size: 15px;
   }
 }
 
