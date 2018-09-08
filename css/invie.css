@@ -316,6 +316,13 @@ REPITE EN OTRAS ETIQUETAS HTML*/
   /* GUITARRAS */
 }
 
+
+@media screen and (max-width: 767px) {
+  .footer {
+    border: 1px solid red;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .header {
     text-align: center;
@@ -337,33 +344,45 @@ REPITE EN OTRAS ETIQUETAS HTML*/
   .logotipo {
     margin: 0;
   }
+}
 
-  @media screen and (max-width: 650px) {
-    .menu li {
-      display: block;
-      margin: 0;
-      padding: 4px 0;
-      border-bottom: 1px solid white;
-    }
+@media screen and (max-width: 650px) {
+  .menu li {
+    display: block;
+    margin: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid white;
+  }
 
-    .menu li:before {
-      display: none;
-    }
+  .guitarra img {
+    width: 200px;
+    /* si la imagen tuviera un alto declarado, debemos
+    declarar un alto automatico en el mediaquerie para
+    no desproporcionarla
+    height: auto;*/
+  }
 
-    .menu li:first-child {
-      border-top: 1px solid white;
-    }
+  .menu li:before {
+    display: none;
+  }
 
-    .portada {
-      text-align: center;
-    }
+  .menu li:first-child {
+    border-top: 1px solid white;
+  }
 
-    .titulo {
-      font-size: 30px;
-    }
+  .portada {
+    text-align: center;
+  }
 
-    .title-a {
-      font-size: 16px;
-    }
+  .titulo {
+    font-size: 30px;
+  }
+
+  .title-a {
+    font-size: 16px;
+  }
+
+  .title-b {
+    font-size: 30px;
   }
 }
