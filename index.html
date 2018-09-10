@@ -109,22 +109,26 @@
     <script>
       //MEDIA QUERIES EN JS
       //QUE SIRVEN PARA ACTIVAR O DESACTIVAR FEATURES
-      var consulta = window.matchMedia('(max-width: 800px)');
+      var consulta = window.matchMedia('(max-width: 500px)');
       consulta.addListener(mediaQuery);
 
       function mediaQuery() {
         if(consulta.matches) {
           console.log('se cumplió la condición')
+          $burguerButton.addEventListener('touchstart', toggleMenu)
+          function toggleMenu() {
+            $menu.classList.toggle('active')
+          };
         } else {
-          console.log('se cumplió la condición')
+          console.log('no se cumplió la condición')
         }
       }
       var $burguerButton = document.getElementById('burguer-button');
       var $menu = document.getElementById('menu');
-      $burguerButton.addEventListener('touchstart', toggleMenu)
-      function toggleMenu() {
-        $menu.classList.toggle('active')
-      };
+      //$burguerButton.addEventListener('touchstart', toggleMenu)
+      //function toggleMenu() {
+        //$menu.classList.toggle('active')
+      //};
     </script>
   </body>
 </html>
