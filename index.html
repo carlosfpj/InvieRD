@@ -112,23 +112,27 @@
       var consulta = window.matchMedia('(max-width: 500px)');
       consulta.addListener(mediaQuery);
 
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu() {
+        $menu.classList.toggle('active')
+      };
+
       function mediaQuery() {
         if(consulta.matches) {
           console.log('se cumplió la condición')
-          $burguerButton.addEventListener('touchstart', toggleMenu)
-          function toggleMenu() {
-            $menu.classList.toggle('active')
-          };
+          $burguerButton.addEventListener('touchstart', toggleMenu);
         } else {
           console.log('no se cumplió la condición')
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
         }
       }
-      var $burguerButton = document.getElementById('burguer-button');
-      var $menu = document.getElementById('menu');
+      mediaQuery();
       //$burguerButton.addEventListener('touchstart', toggleMenu)
       //function toggleMenu() {
         //$menu.classList.toggle('active')
       //};
+
     </script>
   </body>
 </html>
