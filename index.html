@@ -109,9 +109,10 @@
     <script>
       var $burguerButton = document.getElementById('burguer-button');
       var $menu = document.getElementById('menu');
-      $burguerButton.addEventListener('touchstart', function() {
+      $burguerButton.addEventListener('touchstart', toggleMenu)
+      function toggleMenu() {
         $menu.classList.toggle('active')
-      });
+      };
     </script>
   </body>
 </html>
