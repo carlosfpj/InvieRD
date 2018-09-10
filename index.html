@@ -39,7 +39,7 @@
     <section id="guitarras" class="guitarras contenedor">  <!-- guitarras -->
       <h2>Nuestras Guitarras</h2>
       <article class="guitarra"> <!-- ETIQUETA USADA PARA AGRUPAR CONTENIDO ESPECÍFICO, SE PUEDE USAR <div> -->
-        <img class="derecha" src="images/invie-acustica.png" width="350" alt="guitarra invie acustica"/> <!-- IMAGEN , necesita del atributo src-->
+        <img class="derecha" data-src="images/invie-acustica.png" width="350" alt="guitarra invie acustica"/> <!-- IMAGEN , necesita del atributo src-->
         <div class="contenedor-guitarra-a">
           <h3 class="title-b">Invie Acústica</h3> <!-- TITULO -->
           <ol> <!-- DESCRIPCION -->
@@ -50,7 +50,7 @@
         </div>
       </article>
       <article class="guitarra b">
-        <img class="izquierda" src="images/invie-classic.png" width="350" alt="invie classic"/> <!-- IMAGEN -->
+        <img class="izquierda" data-src="images/invie-classic.png" width="350" alt="invie classic"/> <!-- IMAGEN -->
         <div class="contenedor-guitarra-b">
           <h3 class="title-b">Invie Classic</h3> <!-- TITULO -->
           <ol> <!-- DESCRIPCION -->
@@ -65,7 +65,7 @@
     <footer class="footer">
       <section class="contenedor">
         <div class="contacto">
-          <img src="images/invie-white.png" alt="logotipo blanco">
+          <img data-src="images/invie-white.png" alt="logotipo blanco">
           <a href="tel:+573012345678"><strong>Teléfono:</strong><span>3012345678</span></a>
           <a href="mailto:"><strong>Email:</strong><span>contacto@invie.com</span></a>
         </div>
@@ -106,6 +106,9 @@
         </form>
       </section>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js">
+      //LLAMANDO UNA LIBRERIA EXTERNA DE JS CON UN CDN
+    </script>
     <script>
       //MEDIA QUERIES EN JS
       //QUE SIRVEN PARA ACTIVAR O DESACTIVAR FEATURES
@@ -128,6 +131,11 @@
         }
       }
       mediaQuery();
+
+      //LAZYLOADING
+      var bLazy = new Blazy({
+        selector: 'img'
+      });
       //$burguerButton.addEventListener('touchstart', toggleMenu)
       //function toggleMenu() {
         //$menu.classList.toggle('active')
