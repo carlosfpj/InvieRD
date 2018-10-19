@@ -80,6 +80,8 @@ input:focus, textarea:focus {
 
 /*SELECTOR DE CLASE*/
 .background {
+  /*COLOR DE FONDO MIENTRAS CARGA LA IMAGEN*/
+  background-color: #466173;
   background-image: url("../images/background.png");
   background-size: cover;
 }
@@ -516,4 +518,9 @@ REPITE EN OTRAS ETIQUETAS HTML*/
   .title-b {
     font-size: 30px;
   }
+}
+
+@@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  border: 10px solid red;
+
 }
