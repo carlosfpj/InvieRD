@@ -97,6 +97,22 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 
+.burguer-button {
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  height: 40px;
+  background: #395667;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  z-index: 3;
+  display: none;
+}
+
 .contacto {
   display: flex;
   width: 300px;
@@ -296,21 +312,6 @@ REPITE EN OTRAS ETIQUETAS HTML*/
   text-decoration: underline;
 }
 
-.burguer-button {
-  width: 40px;
-  border-radius: 50%;
-  line-height: 40px;
-  height: 40px;
-  background: #395667;
-  display: inline-block;
-  text-align: center;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: white;
-  z-index: 3;
-}
-
 .video-responsive-contenedor {
   position: relative;
   padding-top: 56.25%;
@@ -462,6 +463,10 @@ REPITE EN OTRAS ETIQUETAS HTML*/
 }
 
 @media screen and (max-width: 500px) {
+  .burguer-button {
+    display: block;
+  }
+
   .portada .contenedor {
     position: static;
   }

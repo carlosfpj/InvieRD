@@ -122,8 +122,17 @@
 
       var $burguerButton = document.getElementById('burguer-button');
       var $menu = document.getElementById('menu');
+
       function toggleMenu() {
-        $menu.classList.toggle('active')
+        $menu.classList.toggle('active');
+      };
+
+      function showMenu() {
+        $menu.classList.add('active');
+      };
+
+      function hideMenu() {
+        $menu.classList.remove('active');
       };
 
       function mediaQuery() {
@@ -146,14 +155,11 @@
         //$menu.classList.toggle('active')
       //};
       //GESTOS TOUCH
-
       var $body = document.body;
-
       var gestos = new Hammer($body);
 
-      gestos.on('swipeleft', toggleMenu)
-      gestos.on('swiperight', toggleMenu)
-
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', showMenu);
     </script>
   </body>
 </html>
