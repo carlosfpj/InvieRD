@@ -307,6 +307,7 @@ REPITE EN OTRAS ETIQUETAS HTML*/
   position: absolute;
   top: 20px;
   left: 20px;
+  color: white;
   z-index: 3;
 }
 
@@ -334,6 +335,13 @@ REPITE EN OTRAS ETIQUETAS HTML*/
       max-width: 800px;
     }*/
   /*PORTADA*/
+
+  /* Precios */
+  .tabla .contenedor {
+    overflow: auto;
+    padding: 0 10px;
+  }
+  /* Precios */
   .titulo {
     font-size: 45px;
     margin-top: 30px;
@@ -455,6 +463,14 @@ REPITE EN OTRAS ETIQUETAS HTML*/
 
 @media screen and (max-width: 500px) {
   .portada .contenedor {
+    position: static;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .header .contenedor {
     position: static;
   }
 

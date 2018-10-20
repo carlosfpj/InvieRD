@@ -2,76 +2,85 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>invie - tus mejores guitarras!!!</title>
+    <title>Precios</title>
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/invie.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <!--<link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"/>-->
   </head>
   <body>
-    <section id="portada" class="portada background">   <!-- portada -->
-      <header id="header" class="header contenedor"> <!-- header -->
+    <!-- HEADER -->
+    <header id="header" class="header background">
+      <div class="contenedor">
         <figure class="logotipo"> <!-- logotipo -->
           <img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
         </figure>
         <span class="burguer-button icon-menu" id="burguer-button"></span>
         <nav class="menu" id="menu"> <!-- menu -->
           <ul> <!-- unordered list -->
-            <li>
-               <!-- list items -->
-                <a href="index.html">Home</a>
+            <li> <!-- list items -->
+              <a href="index.html">home</a>
             </li>
             <li>
-              <a href="#guitarras">Guitarras</a>
+              <a href="index.html#guitarras">Guitarras</a>
             </li>
             <li>
               <a href="precios.html">Precios</a>
             </li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
+    </div>
+    <!--TABLA-->
+    <section class="tabla">
       <div class="contenedor">
-        <h1 class="titulo">Guitarras <span>Invie</span>sibles</h1> <!-- TITULO TEXTO PRINCIPAL, USAR SOLO UNA VEZ -->
-        <h3 class="title-a">Sé la estrella de Rock que siempre qusiste ser</h3> <!-- resumen -->
-        <button class="button">Conoce más</button>  <!-- boton -->
+        <table>
+        <thead>
+          <tr>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+          </tr>
+        <tbody>
+          <tr>
+            <td>Invie Classic</td>
+            <td>$100000</td>
+            <td>Guitarra muy pro</td>
+            <td>Invie Classic</td>
+            <td>$100000</td>
+            <td>Guitarra muy pro</td>
+          </tr>
+          <tr>
+            <td>Invie Acústica</td>
+            <td>$150000</td>
+            <td>Guitarra muy acústica</td>
+            <td>Invie Acústica</td>
+            <td>$150000</td>
+            <td>Guitarra muy acústica</td>
+          </tr>
+          <tr>
+            <td>Invie White</td>
+            <td>$200000</td>
+            <td>Guitarra muy blanca</td>
+            <td>Invie White</td>
+            <td>$200000</td>
+            <td>Guitarra muy blanca</td>
+          </tr>
+          </tbody>
+        </thead>
+      </table>
       </div>
-    </section>
-    <section id="guitarras" class="guitarras contenedor">  <!-- guitarras -->
-      <div class="video-responsive-contenedor">
-      <!-- INSERTANDO VIDEOS DESDE YOUTUBE-->
-        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/ziwYbVx_-qg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-      <h2>Nuestras Guitarras</h2>
-      <article class="guitarra"> <!-- ETIQUETA USADA PARA AGRUPAR CONTENIDO ESPECÍFICO, SE PUEDE USAR <div> -->
-        <img class="derecha" data-src="images/invie-acustica.png" width="350" alt="guitarra invie acustica"/> <!-- IMAGEN , necesita del atributo src-->
-        <div class="contenedor-guitarra-a">
-          <h3 class="title-b">Invie Acústica</h3> <!-- TITULO -->
-          <ol> <!-- DESCRIPCION -->
-            <li>Estilo Vintage</li>
-            <li>Madera Pura</li>
-            <li>Incluye estuche invisible de aluminio</li>
-          </ol>
-        </div>
-      </article>
-      <article class="guitarra b">
-        <img class="izquierda" data-src="images/invie-classic.png" width="350" alt="invie classic"/> <!-- IMAGEN -->
-        <div class="contenedor-guitarra-b">
-          <h3 class="title-b">Invie Classic</h3> <!-- TITULO -->
-          <ol> <!-- DESCRIPCION -->
-            <li>Estilo Vintage</li>
-            <li>Liviana</li>
-            <li>Inicia tu camino como Rockstar</li>
-          </ol>
-        </div>
-      </article>
     </section>
     <!-- FOOTER -->
     <footer class="footer">
       <section class="contenedor">
         <div class="contacto">
-          <img data-src="images/invie-white.png" alt="logotipo blanco">
-          <a href="tel:+573012345678"><strong>Teléfono:</strong><span>3012345678</span></a>
-          <a href="mailto:"><strong>Email:</strong><span>contacto@invie.com</span></a>
+          <img src="images/invie-white.png" alt="logotipo blanco">
+          <a href="tel:+573012345678"><strong>Teléfono:</strong><span>3012345678</span>
+          <a href="mailto:"><strong>Email:</strong><span>contacto@invie.com</span>
         </div>
         <form class="formulario">
           <div class="col1">
@@ -110,10 +119,9 @@
         </form>
       </section>
     </footer>
-    <!--LLAMANDO UNA LIBRERIA EXTERNA DE JS CON UN CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js">
+      //LLAMANDO UNA LIBRERIA EXTERNA DE JS CON UN CDN
+    </script>
     <script>
       //MEDIA QUERIES EN JS
       //QUE SIRVEN PARA ACTIVAR O DESACTIVAR FEATURES
@@ -145,14 +153,6 @@
       //function toggleMenu() {
         //$menu.classList.toggle('active')
       //};
-      //GESTOS TOUCH
-
-      var $body = document.body;
-
-      var gestos = new Hammer($body);
-
-      gestos.on('swipeleft', toggleMenu)
-      gestos.on('swiperight', toggleMenu)
 
     </script>
   </body>
